@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: shaire
+  name: actiond
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "shaire"
+  - name: "actiond"
     port: 8080
   selector:
-    app: shaire
+    app: actiond
