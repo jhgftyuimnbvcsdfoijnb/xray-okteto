@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tweradc
+  name: jactrexv
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tweradc
+      app: jactrexv
   template:
     metadata:
       labels:
-        app: tweradc
+        app: jactrexv
     spec:
       containers:
-      - image: okteto.dev/tweradc:latest
-        name: tweradc
+      - image: okteto.dev/jactrexv:latest
+        name: jactrexv
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.pexels.com"
+          value: "www.videvo.net"
         - name: Vless_UUID
-          value: "a40dce8c-ee99-4c67-aaa6-ad31d9e96796"
+          value: "9cb130cb-53bb-4ece-91ff-1d8909c8c853"
         - name: Vless_Path
-          value: "/azxoerhw"
+          value: "/UHGERDF"
         - name: Vmess_UUID
-          value: "a40dce8c-ee99-4c67-aaa6-ad31d9e96796"
+          value: "9cb130cb-53bb-4ece-91ff-1d8909c8c853"
         - name: Vmess_Path
-          value: "/NBOFTER"
+          value: "/MNRTGSY"
         - name: Share_Path
-          value: "/Share244"
+          value: "/Share043"
