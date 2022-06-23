@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shaire
+  name: actiond
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: shaire
+      app: actiond
   template:
     metadata:
       labels:
-        app: shaire
+        app: actiond
     spec:
       containers:
-      - image: okteto.dev/shaire:latest
-        name: shaire
+      - image: okteto.dev/actiond:latest
+        name: actiond
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.greenmangaming.com"
+          value: "pixabay.com"
         - name: Vless_UUID
-          value: "85f5615c-025a-4707-a52e-4177462967cc"
+          value: "c8508a96-2c79-4c6b-92ab-af162ca5bd82"
         - name: Vless_Path
-          value: "/ujdf6y"
+          value: "/quyetsdt"
         - name: Vmess_UUID
-          value: "85f5615c-025a-4707-a52e-4177462967cc"
+          value: "c8508a96-2c79-4c6b-92ab-af162ca5bd82"
         - name: Vmess_Path
-          value: "/iergdfty"
+          value: "/fgqwbor"
         - name: Share_Path
-          value: "/Share654"
+          value: "/Share213"
