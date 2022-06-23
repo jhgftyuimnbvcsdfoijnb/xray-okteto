@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jactrexv
+  name: sraybery
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jactrexv
+      app: sraybery
   template:
     metadata:
       labels:
-        app: jactrexv
+        app: sraybery
     spec:
       containers:
-      - image: okteto.dev/jactrexv:latest
-        name: jactrexv
+      - image: okteto.dev/sraybery:latest
+        name: sraybery
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.videvo.net"
+          value: "www.vecteezy.com"
         - name: Vless_UUID
-          value: "9cb130cb-53bb-4ece-91ff-1d8909c8c853"
+          value: "763a4fcf-ac94-4da2-bd3b-9bea84eda7e4"
         - name: Vless_Path
-          value: "/UHGERDF"
+          value: "/ihsfbcvu"
         - name: Vmess_UUID
-          value: "9cb130cb-53bb-4ece-91ff-1d8909c8c853"
+          value: "763a4fcf-ac94-4da2-bd3b-9bea84eda7e4"
         - name: Vmess_Path
-          value: "/MNRTGSY"
+          value: "/sdxcweiu"
         - name: Share_Path
-          value: "/Share043"
+          value: "/Share204"
