@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: cherim
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: cherim
   template:
     metadata:
       labels:
-        app: ray
+        app: cherim
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/cherim:latest
+        name: cherim
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "$ProxySite"
+          value: "https://www.crazygames.com"
         - name: Vless_UUID
-          value: "$Vless_UUID"
+          value: "bcad01e3-25ce-4a6d-97da-71e7f59a67f8"
         - name: Vless_Path
-          value: "$Vless_Path"
+          value: "/ruywdi"
         - name: Vmess_UUID
-          value: "$Vmess_UUID"
+          value: "bcad01e3-25ce-4a6d-97da-71e7f59a67f8"
         - name: Vmess_Path
-          value: "$Vmess_Path"
+          value: "/tbkjtgd"
         - name: Share_Path
-          value: "$Share_Path"
+          value: "/Share690"
