@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: tweradc
+  name: jactrexv
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "tweradc"
+  - name: "jactrexv"
     port: 8080
   selector:
-    app: tweradc
+    app: jactrexv
